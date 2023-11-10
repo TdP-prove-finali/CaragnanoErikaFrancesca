@@ -7,4 +7,4 @@ Udemy Remote Learning: software per la selezione di piani formativi personalizza
 4. Inserire la password del DBMS utilizzato nel campo setPassword all'interno della classe DBConnect.
 5. Eseguire la classe Main per avviare l'applicazione.
    
-Video dimostrativo sull'uso dell'applicazione disponibile al link: https://clipchamp.com/watch/c5T3I6yIdEg
+Video dimostrativo sull'uso dell'applicazione disponibile al link: https://youtu.be/VgKWqBVGU00?si=wzLbgFBf9gm-KGte
