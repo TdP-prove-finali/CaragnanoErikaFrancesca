@@ -148,7 +148,7 @@ public class UdemyDAO {
 		        int[] results = st.executeBatch(); // Esegue il batch
 
 		        conn.commit(); // Completa la transazione
-		        // Se vuoi verificare i risultati, puoi iterare su results che contiene il numero di righe inserite per ogni statement del batch.
+		        // Per verificare i risultati, iterare su results che contiene il numero di righe inserite per ogni statement del batch.
 
 		    } catch (SQLException e) {
 		        if (conn != null) {
@@ -225,8 +225,8 @@ public class UdemyDAO {
 
 	        int[] results = st.executeBatch(); // Esegue il batch
 
-	        conn.commit(); // Completa la transazione
-	        // Se vuoi verificare i risultati, puoi iterare su results che contiene il numero di righe inserite per ogni statement del batch.
+	        conn.commit(); 
+	        
 
 	    } catch (SQLException e) {
 	        if (conn != null) {
@@ -269,20 +269,20 @@ public class UdemyDAO {
 	        st.setDouble(1, budget);
 	        st.setString(2, user.getUsername());
 
-	        // Esegui l'aggiornamento del database
+	        // Aggiornamento del database
 	        int rowsAffected = st.executeUpdate();
 	        
 	        // Commit la transazione solo se l'aggiornamento è avvenuto con successo
 	        if (rowsAffected > 0) {
-	            conn.commit(); // Completa la transazione
+	            conn.commit(); // Completare la transazione
 	        } else {
-	            conn.rollback(); // Annulla la transazione se nessuna riga è stata aggiornata
+	            conn.rollback(); // Annullo la transazione se nessuna riga è stata aggiornata
 	        }
 
 	    } catch (SQLException e) {
 	        if (conn != null) {
 	            try {
-	                conn.rollback(); // Annulla la transazione in caso di errore
+	                conn.rollback(); // Annullo la transazione in caso di errore
 	            } catch (SQLException ex) {
 	                ex.printStackTrace();
 	                throw new RuntimeException("Rollback failed", ex);
