@@ -1,5 +1,5 @@
 # Istruzioni per l'utilizzo del software
-Udemy Remote Learning: software per la selezione di piani formativi personalizzati.
+JavaFX Remote Learning Tool: software per la generazione automatica di piani formativi personalizzati.
 
 1. Effettuare il fork del repository
 2. Importare il progetto in Eclipse copiando la URI del repository creata nel proprio GitHub a seguito del fork.
